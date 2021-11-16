@@ -1,0 +1,432 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	/*list-style: none;*/
+	box-sizing: border-box;
+}
+body{		
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color:black;
+    font-family: Times New Roman;
+}
+.width72{
+    width:72rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ---------- NAVBAR ---------- */
+nav{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:19px;
+}
+.nav-logo a{
+    color:black;
+}
+.nav-logo p{
+    padding-bottom: 0.25rem;
+    font-size: 20px;
+}
+.nav-menu{
+    display:block;
+    height:auto;
+}
+.nav-menu a{
+    padding-left: 3rem;
+    color:black;
+}
+.active{
+    font-weight: bolder;
+}
+/* ---------- TITRE DE LA PAGE ---------- */
+.page-titre{
+    font-size: 60px;
+    position:relative;
+    top:50px;
+}
+/* ---------- CONTENU DE LA PAGE PRESENTATION ---------- */
+.main{
+    background-color: #ededee;
+}
+.introduction{
+    padding-top: 70px;
+    font-size: 33px;
+    font-weight: bolder;
+    text-align: justify;
+}
+.encadr{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #10b981;
+    color:white;
+    border-radius:5px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.bloc{
+    padding-top: 70px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 1.75rem;
+    justify-content: space-between;
+}
+.sbloc{
+    color:#636e72;
+    font-size: 20px;
+    letter-spacing: 0.03rem;
+    
+}
+.gauche{
+    width:35%;
+    padding-right: 50px;
+    display:flex;
+    flex-direction: column;
+}
+.gauche p{
+    margin-bottom: 15px;
+}
+.intit{
+    font-weight: bolder;
+    color:#2d3436;
+}
+.droite{
+    width:65%;
+    padding-left:50px;
+    color:#2d3436;
+    text-align: justify;
+}
+.droite .titre{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.droite hr{
+    margin-top: 5px;
+    margin-bottom:15px;
+    width:275px;
+    height:2px;
+    background-color: #2d3436;
+    border:none;
+    border-radius:5px;
+}
+/* ---------- CARTES DE COMPETENCES ---------- */
+.stack{
+    margin-top: 90px;
+}
+h2{
+    font-size: 35px;
+}
+.listStack{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.carteStack{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height:150px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding:30px;
+    font-size: 16px;
+}
+.stack-image{
+    margin-top: 15px;
+    height:60px;
+}
+.carte-details{
+    padding-top:8px;
+    padding-left: 25px;
+}
+.carte-details h3{
+    margin-bottom: 10px;
+}
+/* ---------- FOOTER ---------- */
+footer{
+    background-color:#ededee;
+    height:150px;
+    margin-top: 90px;
+    border-top:3px solid white;
+    padding-top: 20px;
+    font-size: 19px;
+    text-align: center;
+    color:#2d3436;
+}
+/* ---------- PAGE DES PROJETS ---------- */
+.projet{
+    width:48%;
+    height:280px;
+    position:relative;
+    display: inline-block;   
+    margin-bottom: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 3px;
+    border:2px solid whitesmoke;
+    cursor: pointer;
+}
+.pic{
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .3s;
+    position:absolute;
+}
+.comment{
+    position:absolute;
+    text-align: center;
+    width:100%;
+    margin-top: 100px;
+    display: none;
+    transition: all .32s;
+    color:whitesmoke;
+    line-height: 40px;
+}
+.projet:hover .pic{
+    filter:brightness(30%);
+    -webkit-filter: brightness(30%);
+}
+
+.projet:hover .comment{
+    display: block;
+}
+.button-skills span{
+    color:white;
+    font-weight:bolder;
+    margin-right:10px;
+    padding:10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.btnGris span{
+    background-color: #1F2937;
+}
+.btnBleuV span{
+    background-color: #4834d4;
+}
+.btnRouge span{
+    background-color: #EA2027;
+}
+.btnBleuC span{
+    background-color: #74b9ff;
+}
+.description-projet p{
+    margin-top: 30px;
+    font-size:20px;
+    letter-spacing: 00.03rem;
+    color: #2d3436;
+    line-height: 1.75rem;
+    text-align: justify;
+}
+/* ---------- PAGE DU PARCOURS ---------- */
+.colonne{
+    width:45%;
+}
+.unParcour{
+    background-color: white;
+    padding:20px 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 5px;
+    position:relative;
+    z-index: 0;
+}
+.unParcour h3{
+    font-size: 21px;
+    z-index: 3;
+    position:relative;
+}
+.unParcour span{
+    position:absolute;
+    top:-5px;right: 20px;
+    color:#e5e7eb;
+    border-radius: 15px;
+    font-size: 70px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px rgb(221, 221, 221);
+    z-index: 2;
+}
+.unParcour p{
+    font-size: 17px;
+    color:#636e72;
+    z-index: 3;
+    position:relative;
+}
+.unParcour .commentaire{
+    margin-top: 10px;
+    line-height: 1.4rem;
+    color:#2d3436;
+    text-align: justify;
+}
+.trait{
+    width:50%;
+    margin-left:auto;
+    border-left: 5px solid #d2d3d4;
+    background-color: none;
+    height: 65px;
+    position:relative;
+    opacity: 1;
+}
+.trait::before{
+    content: "";
+    position: absolute;
+    top:-10px;left:-11px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    background: #10b981;
+    border: 2px solid #10b981;
+}
+
+/* ---------- PARTIE RESPONSIVE ---------- */
+@media only screen and (max-width: 768px) {
+    nav{
+        width: 100% !important;
+        flex-direction: column;
+        padding:2rem 1rem;
+    }
+    .nav-logo{
+        width:100%;
+    }
+    .nav-menu{
+        margin-top: 50px;
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+    .nav-menu a{
+        padding-left: 0rem;
+        color:black;
+    }
+    .page-titre{
+        width: 100% !important;
+        font-size: 25px;
+        padding:0rem 1rem;
+    }
+    .main{
+        margin-top: 25px!important;
+        padding:0rem 1rem;
+    }
+    .introduction{
+        width: 100% !important;
+        font-size: 22px;
+        padding-top: 50px;
+        text-align: start;
+        line-height: 2.3rem;
+    }
+    .encadr{
+        white-space: nowrap;
+    }
+    .bloc{
+        width: 100% !important;
+        flex-direction: column;
+        padding-top: 50px;
+        line-height: 1.4rem;
+        text-align: justify;
+    }
+    .sbloc{
+        font-size: 16px;
+    }
+    .gauche{
+        width: 100% !important;
+        padding:0px;
+    }
+    .droite{
+        width: 100% !important;
+        padding:50px 0px;
+    }
+    .droite p{
+        margin-bottom: 20px;
+    }
+    .droite .titre{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .droite hr{
+        margin-top: -5px;
+        width:100%;
+        height:1px;
+        background-color: black;
+        opacity: 0.3;
+    }
+    .stack{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    .listStack{
+        padding-top: 20px;
+    }
+    .carteStack{
+        width: 100%;
+        height:140px;
+        padding:20px;
+    }
+    footer{
+        width: 100% !important;
+        font-size: 15px;
+        margin-top:40px;
+        max-height: 70px;
+    }
+    h2{
+        font-size: 24px;
+        white-space:nowrap;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .colonne{
+        width:100%;
+        margin-bottom: 50px;
+    }
+    .unParcour span{
+        font-size: 45px;
+    }
+    .unParcour p{
+        font-size: 15px;
+    }
+    .conteneur{
+        width:100%!important;
+    }
+    .projet{
+        width:100%;
+    }
+    .pic{
+        background-position: center;
+    }
+    .button-skills{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 20px!important;
+    }
+    .button-skills span{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .slideshow-container{
+        padding-top: 40px!important;
+    }
+    .mySlides img{
+        width:100%;
+        height:300px;
+    }
+    .description-projet p{
+        font-size: 16px;
+    }
+}
