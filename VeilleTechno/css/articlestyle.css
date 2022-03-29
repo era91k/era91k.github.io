@@ -171,4 +171,28 @@ body {
 		font-family: 'Fira Sans Condensed', sans-serif;
 		font-size: 15px;
 	}
+
+
+
+
+
+                    <div class="card">
+                        <a href="https://www.numerama.com/sciences/659090-nokia-va-deployer-la-4g-sur-la-lune-mais-pour-quoi-faire.html">
+                            <img src="img/numera.png"  width="290px" height="290px" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                             <h5 class="card-title num">Numerama</h5>
+                             <p class="card-date">19 Octobre 2020</p>
+                             <p class="card-text">
+                                 Cet article de Numerama nous apprend que Nokia fera son travail se fera en
+                                 collaboration avec Intuitive Machines, une entreprise américaine qui a
+                                 par ailleurs passé un contrat avec la Nasa pour développer un atterrisseur lunaire, Nova-C.
+                                 La présence du réseau 4G est envisagée comme un des moyens de pérenniser
+                                 la présence humaine sur la Lune, qui est un aspect du programme Artémis.
+                             </p>
+                            <p class="card-pdf">
+                                <a href="pdf/numerama.pdf">Version PDF</a>
+                            </p>
+                        </div>
+                    </div>
    
