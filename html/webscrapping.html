@@ -24,32 +24,26 @@
             </div>
         </nav>
         <div class="page-titre width72">
-            <h1>GSB2.</h1>
+            <h1>Webscrapping.</h1>
         </div>
         <div class="main" style="margin-top: 21px;">
             <div class="conteneur width72">
                 <div class="introduction" style="padding-top: 50px;">
-                    Projet réalisé en deuxième année de BTS SIO, développement d'un logiciel client lourd - Décembre 2021 </a>
+                    Projet de Webscrapping, développement d'un script en Python permettant d'extraire des données depuis un site web - Juillet 2022 </a>
                 </div>
-                <div class="button-skills btnBleuF" style="padding-top: 50px;">
-                    <span>Java</span>
-                    <span>SQL</span>
-                    <span>MVC</span>
+                <div class="button-skills btnBleuNestenn" style="padding-top: 50px;">
+                    <span>Python</span>
+                    <span>BeautifulSoup</span>
                 </div>
                 <div class="slideshow-container" style="padding-top: 70px;">
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
-                      <img src="../img/gsb2p1.png" style="width:100%">
+                      <img src="../img/script_python.png" style="width:100%">
                     </div>
                   
                     <div class="mySlides fade">
-                      <img src="../img/gsb2p2.png" style="width:100%">
+                      <img src="../img/nestenn.png" style="width:100%">
                     </div>
-                  
-                    <div class="mySlides fade">
-                      <img src="../img/gsb2p3.png" style="width:100%">
-                    </div>
-                  
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -57,13 +51,12 @@
                 <div class="description-projet" style="padding-top:70px">
                     <h2>Contexte du projet</h2>
                     <p>
-                        GSB (Galaxy Swiss Bourdin) est une entreprise pharmaceutique internationale qui emploie des visiteurs médicaux
-                        afin de promouvoir aux médecins, pharmaciens et autres métiers de santé les différents produits et médicaments issus du laboratoire.
+                        J'ai développé ce script de webscrapping suite à la demande d'une connaissance qui souhaitait établir une liste de prospects. Il permet d'extraire toutes les informations disponibles 
+                        (nom, adresse, numéro, coordonnées de l'agence, information des salariés...) liées aux agences immobilières présentes sur le site web "nestenn.com".
                         <br><br>
-                        Cette application Java permet la gestion de réservations de véhicules et de matériels liées à l'activité de visite médicale.
-                        Une page de connexion différencie les 3 types d'utilisateurs ; les visiteurs médicaux eux peuvent enregistrer des réservations pour
-                        un véhicule ou un matériel à une période choisie ainsi que consulter/annuler leurs réservations, les responsables sont chargés de gerer les
-                        différents objets du catalogue (ajout/suppression) et les directeurs peuvent consulter les statistiques concernant les réservations et en générer un PDF.
+                        N'ayant jamais fait de webscrapping avant, j'ai d'abord du me renseigner et me former. J'ai utilisé la bibliothèque Python BeautifulSoup4 qui permet
+                        de faire une analyse syntaxique de documents HTML et XML. Le script permet d'itérer parmi toutes les pages de toutes les agences présentes et de "creuser" dans
+                        chacune d'entre elles pour y extraire les informations et les ajouter dans un fichier csv, ce qui permet ainsi de les consulter et de les manipuler plus facilement sur Excel.
                         
                     </p>
                 </div>
